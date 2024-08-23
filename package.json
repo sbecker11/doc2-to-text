@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-es6-sample-app",
+  "version": "1.0.0",
+  "description": "A sample NodeJS ES6 command-line application",
+  "main": "app.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node app.mjs",
+    "test": "node app_test.mjs"
+  },
+  "keywords": ["nodejs", "es6", "cli"],
+  "author": "Your Name",
+  "license": "MIT"
+}
