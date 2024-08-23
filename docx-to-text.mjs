@@ -1,4 +1,7 @@
-async function extractTextFromDocxDocument(filePath) {
+import fs from 'fs';
+import mammoth from 'mammoth';
+
+export async function extractTextFromDocxDocument(filePath) {
 
     console.info(`extractTextFromDocxDocument filePath: ${filePath}`);
     if (filePath == null || typeof filePath != 'string' || filePath.length == 0 ) {

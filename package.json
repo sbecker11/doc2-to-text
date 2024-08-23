@@ -1,14 +1,31 @@
 {
-  "name": "nodejs-es6-sample-app",
+  "name": "app",
   "version": "1.0.0",
-  "description": "A sample NodeJS ES6 command-line application",
+  "description": "A simple NodeJS ES6 command-line application",
   "main": "app.mjs",
   "type": "module",
   "scripts": {
     "start": "node app.mjs",
+    "demo": "node app.mjs full-resume.docx",
+    "demo-small": "node app.mjs small.docx",
+    "eslint": "npx eslint '*.mjs'",
     "test": "node app_test.mjs"
   },
-  "keywords": ["nodejs", "es6", "cli"],
+  "keywords": [
+    "nodejs",
+    "es6",
+    "cli"
+  ],
   "author": "Your Name",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "commander": "^8.0.0",
+    "eslint": "^9.9.0",
+    "mammoth": "^1.8.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.7.3",
+    "sinon": "^18.0.0"
+  }
 }
